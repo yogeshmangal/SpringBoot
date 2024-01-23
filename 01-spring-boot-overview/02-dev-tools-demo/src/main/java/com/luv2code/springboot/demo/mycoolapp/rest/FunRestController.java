@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class FunRestController {
     @GetMapping("/")
     public String sayHello() {
-        return "Hello World by Yogesh!!";
+        return "Hello World!!";
     }
 
     @GetMapping("/workout")
     public String getDailyWorkout() {
-        return "Run a hard 5k Steps";
+        return "Run a hard 5k!!";
     }
 
     @GetMapping("/fortune")
