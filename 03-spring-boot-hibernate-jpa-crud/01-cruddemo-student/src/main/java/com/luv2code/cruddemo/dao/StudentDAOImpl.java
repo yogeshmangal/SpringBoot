@@ -1,7 +1,6 @@
-package com.luv2code.cruddemo.entity.dao;
+package com.luv2code.cruddemo.dao;
 
 import com.luv2code.cruddemo.entity.Student;
-import jakarta.persistence.Entity;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;

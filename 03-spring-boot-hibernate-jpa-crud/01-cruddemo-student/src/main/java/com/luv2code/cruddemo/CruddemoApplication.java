@@ -1,7 +1,7 @@
 package com.luv2code.cruddemo;
 
 import com.luv2code.cruddemo.entity.Student;
-import com.luv2code.cruddemo.entity.dao.StudentDAO;
+import com.luv2code.cruddemo.dao.StudentDAO;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
