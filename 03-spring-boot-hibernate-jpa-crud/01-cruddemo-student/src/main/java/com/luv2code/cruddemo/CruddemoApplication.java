@@ -18,10 +18,18 @@ public class CruddemoApplication {
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 		return shalu -> {
 //			createStudent(studentDAO);
-			createMultipleStudents(studentDAO);
+//			createMultipleStudents(studentDAO);
+			readStudent(studentDAO);
 		};
 	}
 
+	public void readStudent(StudentDAO studentDAO) {
+		Student student = new Student("Rakhi", "Mangal", "rm@gmail.com");
+		studentDAO.save(student);
+		int id = student.getId();
+		Student myStudent = studentDAO.findById(id);
+		System.out.println(myStudent);
+	}
 	public void createStudent(StudentDAO studentDAO) {
 		System.out.println("Creating a new student object ...");
 		Student student = new Student("Rekha", "Garg", "rg@gmail.com");
