@@ -15,6 +15,7 @@ import javax.sql.DataSource;
 public class DemoSecurityConfig {
 
     /*
+    //Here we have hardcoded the users and their roles.
     @Bean
     public InMemoryUserDetailsManager userDetailsManager() {
         UserDetails john = User.builder()
@@ -39,6 +40,7 @@ public class DemoSecurityConfig {
     }
      */
 
+    // Here we have created the users with their roles in the database and using them from the database.
     @Bean
     public UserDetailsManager userDetailsManager(DataSource dataSource) {
         return new JdbcUserDetailsManager(dataSource);
